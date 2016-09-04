@@ -1,0 +1,133 @@
+*, a{
+	text-shadow: none;
+}
+
+#logo_image {
+	text-align: center;
+	margin: 0px;
+	padding: 30px;
+}
+
+#slidemenu_list li a {
+	background-color: transparent !important;
+    background-image: url('') !important;
+}
+
+form {
+	text-align: center;
+}
+
+.ui-input-text, .ui-input-btn, .ui-select, .ui-checkbox{
+	margin: 5%;
+	min-width: 80%;
+}
+
+
+#profile_img{
+	text-align: center;
+}
+
+.clear{
+	height: 2em;
+}
+
+.center_logo{
+	width: 300px;
+	display: block;
+}
+
+.center_div{
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 3em;
+}
+
+.ui-content{
+	margin-bottom: 80px;
+}
+
+.druginfo_div{
+	margin-bottom: 3em;
+}
+
+.ui-li-desc {
+	white-space:normal !important;
+	line-height:1em;
+	max-height:4em;
+}
+.ui-li-title {
+	white-space:normal !important;
+	line-height:1em;
+	max-height:3em;
+}
+.reply-label{
+	color: #333;
+	padding: 8px;
+	background: lightgrey;
+	display:inline !important;
+}
+.reply-label-wrap{
+	margin: 15px 0 !important;
+	display: block;
+}
+
+.button-right{
+	text-align: right;
+}
+
+.author-label{
+	color: #333;
+	background: #ccc;
+	display:inline !important;
+	padding: 5px;
+	text-align: right;
+	font-size: 0.8em;
+}
+.topic-reply-top{
+	margin-top: 10%;
+}
+.topic-ui-li-desc {
+	white-space:normal !important;
+	line-height:1em;
+}
+.ui-popup-container, .ui-popup{
+	width: 90%;
+}
+
+.news-content{
+	width: 90% !important;
+	height: auto !important;
+}
+
+#loginbtn{
+	width: 100% !important;
+}
+
+.register{
+	margin-top: 50px !important;
+}
+.dashboard{
+	text-align: center;
+}
+
+
+
+
+
+
+/* 2nd change */
+.ui-header h1{
+	color: skyblue !important;
+}
+
+#home-banner {
+  width: 100%;
+  max-height: 50%;
+  max-width: 100%;
+}
+
+#home-content {
+	padding: 0;
+	margin: 0;
+}
