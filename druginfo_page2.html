@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Eddie’s Anti-drug Information and Resources</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.js"></script>
+  <script src="./js/jquery.cookie.js"></script>
+  <script src="./js/custom.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+<!-- Home menu -->
+<div data-role="panel" id="sidemenu" data-swipe-close="true" data-theme="b" data-position-fixed="true" data-display="push">
+  <ul data-role="listview" id="slidemenu_list">
+    <li data-icon="home"><a href="index.html" rel="external">Home</a></li>
+    <li><a href="about.html" rel="external">About us</a></li>
+    <li><a href="druginfo.html" rel="external">Drug info</a></li>
+    <li><a href="center.html" rel="external">Center</a></li>
+    <li><a href="contact.html" rel="external">Contact us</a></li>
+    <li><a href="video.html" rel="external">Video</a></li>
+  </ul>
+  <div class="clear"></div>
+  
+  <a href="#" class="ui-btn ui-icon-user ui-btn-icon-left" id="logout">Logout</a>
+
+</div>
+
+<!-- Login -->
+<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="popupLogin">
+  <h2>Login</h2>
+  <form method="post" action="" id="loginForm">
+    <label for="name">Username:</label>
+    <input type="text" name="username" id="username" value="" data-clear-btn="true" data-mini="true" placeholder="Enter Username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" placeholder="Enter Password">
+      <input id="loginbtn" type="submit" value="Login">
+      <p class="register"><a href="register.html" data-theme="b" rel="external">Register</a></p>
+  </form>
+</div>
+
+<!-- Header -->
+<div data-role="header" data-position="fixed" data-theme="b">
+  <div style="float:right;">
+    <a href="dashboard.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-b" rel="external" id="dashboardbox"> Dashboard </a>
+    <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-user ui-btn-icon-left ui-btn-b" data-transition="pop" id="loginbox">Login</a>
+  </div>
+  <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-b ui-btn-icon-notext" data-rel="back" rel="external">Back</a>
+  <h1>Hallucinogens</h1>
+</div>
+
+<!-- CONTENT -->
+<div data-role="main" class="ui-content" id="main-content">
+
+  <h2>Hallucinogens</h2>
+
+  <div class="druginfo_div">
+    <img src="./images/drug_img/cannabis.jpg">
+    <p>Substance: <b>Cannabis</b></p>
+    <p>Street Names: <b>Marijuana, hash, grass</b></p>
+    <p>Medical Use: <b>None</b></p>
+    <p>Effect and Danger: <b>1. Hallucination
+2. Impaired co-ordination
+3. Addiction
+4. Heightened risk of cancer
+5. Reduced concentration and impaired memory and judgment
+6. Depression and extreme suspicion of others
+7. Irritability and short temper
+8. Respiratory disease
+9. Regular users of cannabis are more likely to try other illicit drugs</b></p>
+  </div>
+
+<div class="druginfo_div">
+    <img src="./images/drug_img/cannabis_resin.jpg">
+    <p>Substance: <b>Cannabis resin</b></p>
+    <p>Street Names: <b>None</b></p>
+    <p>Medical Use: <b>None</b></p>
+    <p>Effect and Danger: <b>1. Hallucination
+2. Impaired co-ordination
+3. Addiction
+4. Heightened risk of cancer
+5. Reduced concentration and impaired memory and judgment
+6. Depression and extreme suspicion of others
+7. Irritability and short temper
+8. Respiratory disease
+9. Regular users of cannabis are more likely to try other illicit drugs</b></p>
+  </div>
+
+<div class="druginfo_div">
+    <img src="./images/drug_img/synthetic_cannabinoids.gif">
+    <p>Substance: <b>Synthetic cannabinoids</b></p>
+    <p>Street Names: <b>K2, SPICE</b></p>
+    <p>Medical Use: <b>None</b></p>
+    <p>Effect and Danger: <b>1. Hallucinations
+2. Increased agitation
+3. Elevated blood pressure and heart rates
+4. Seizures</b></p>
+  </div>
+
+  <div class="druginfo_div">
+    <img src="./images/drug_img/lsd.jpg">
+    <p>Substance: <b>LSD</b></p>
+    <p>Street Names: <b>Black Sesame, Fing Ba</b></p>
+    <p>Medical Use: <b>None</b></p>
+    <p>Effect and Danger: <b>1. Disoriented behaviour
+2. Impaired judgement
+3. Nausea and vomiting
+4. Increased pulse rate and elevated blood pressure</b></p>
+  </div>
+
+</div>
+
+
+
+<!-- Footer -->
+<div data-role="footer" data-position="fixed" data-theme="b">
+    <h1>Copyright &copy; Eddie’s Anti-drug Information and Resources</h1>
+  </div>
+</div>
+</body>
+</html>

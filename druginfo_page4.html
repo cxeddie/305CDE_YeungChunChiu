@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Eddie’s Anti-drug Information and Resources</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.js"></script>
+  <script src="./js/jquery.cookie.js"></script>
+  <script src="./js/custom.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+<!-- Home menu -->
+<div data-role="panel" id="sidemenu" data-swipe-close="true" data-theme="b" data-position-fixed="true" data-display="push">
+  <ul data-role="listview" id="slidemenu_list">
+    <li data-icon="home"><a href="index.html" rel="external">Home</a></li>
+    <li><a href="about.html" rel="external">About us</a></li>
+    <li><a href="druginfo.html" rel="external">Drug info</a></li>
+    <li><a href="center.html" rel="external">Center</a></li>
+    <li><a href="contact.html" rel="external">Contact us</a></li>
+    <li><a href="video.html" rel="external">Video</a></li>
+  </ul>
+  <div class="clear"></div>
+  
+  <a href="#" class="ui-btn ui-icon-user ui-btn-icon-left" id="logout">Logout</a>
+
+</div>
+
+<!-- Login -->
+<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="popupLogin">
+  <h2>Login</h2>
+  <form method="post" action="" id="loginForm">
+    <label for="name">Username:</label>
+    <input type="text" name="username" id="username" value="" data-clear-btn="true" data-mini="true" placeholder="Enter Username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" placeholder="Enter Password">
+      <input id="loginbtn" type="submit" value="Login">
+      <p class="register"><a href="register.html" data-theme="b" rel="external">Register</a></p>
+  </form>
+</div>
+
+<!-- Header -->
+<div data-role="header" data-position="fixed" data-theme="b">
+  <div style="float:right;">
+    <a href="dashboard.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-b" rel="external" id="dashboardbox"> Dashboard </a>
+    <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-user ui-btn-icon-left ui-btn-b" data-transition="pop" id="loginbox">Login</a>
+  </div>
+  <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-b ui-btn-icon-notext" data-rel="back" rel="external">Back</a>
+  <h1>Stimulants</h1>
+</div>
+
+<!-- CONTENT -->
+<div data-role="main" class="ui-content" id="main-content">
+
+  <h2>Stimulants</h2>
+
+  <div class="druginfo_div">
+    <p><b><i>Amphetamines: Methamphetamine,
+also known as methylamphetamine:</i></b></p>
+    <img src="./images/drug_img/yaba.gif">
+    <p>Substance: <b>Methamphetamine tablet </b></p>
+    <p>Street Names: <b>Yaba</b></p>
+    <img src="./images/drug_img/methylamp.jpg">
+    <p>Substance: <b>Crystal methamphetamine</b></p>
+    <p>Street Names: <b>Ice</b></p>
+    <img src="./images/drug_img/phentermine.jpg">
+    <p>Substance: <b>Phentermine(Duromine, Redusa, Mirapront)</b></p>
+    <p>Street Names: <b>None</b></p>
+    <p>Medical Use: <b>None</b></p>
+    <p>Effect and Danger: <b>11. Insomnia
+2. Agitation
+3. Panic and delirium
+4. Anxiety and tension
+5. Skin sores
+6. Depression
+7. Heart failure
+8. Hallucination and feeling of persecution which may lead to violent behaviour
+9. In very high doses, toxic psychosis, convulsions, coma, brain haemorrhage and death may occur</b></p>
+  </div>
+
+  <div class="druginfo_div">
+    <img src="./images/drug_img/cocaine.jpg">
+    <p>Substance: <b>Cocaine</b></p>
+    <p>Street Names: <b>C, coke, flake, snow, stardust, Charlie, crack, gold dust, coco</b></p>
+    <p>Medical Use: <b>Local or topical anaesthetic</b></p>
+    <p>Effect and Danger: <b>1. Addiction
+2. Respiratory damage
+3. Mania
+4. Paranoid delusion
+5. Impaired memory
+6. Hallucination
+7. Delirium
+8. Heart disease
+9. Nasal damage</b></p>
+  </div>
+
+  <div class="druginfo_div">
+    <img src="./images/drug_img/mdma.gif">
+    <p>Substance: <b>Methylenedioxy-methamphetamine (MDMA)</b></p>
+    <p>Street Names: <b>Ecstasy</b></p>
+    <p>Medical Use: <b>None</b></p>
+    <p>Effect and Danger: <b>
+1. Tending to over-exercise which may lead to exhaustion, over-heating and eventually convulsion or collapse
+2. Causing convulsions of muscles and uncontrollable behaviour of "shaking and dancing"
+3. Confusion, depression, sleep problem, anxiety and paranoia, such feelings may last for weeks after taking the drug
+4. Increase in heart rate and blood pressure poses a special risk for people with circulatory or heart disease
+5. Hot crowded conditions, e.g. party sites, can lead to dehydration and heart or kidney failure
+6. Abusers may undermine safe sex practices due to reduction in inhibitions</b></p>
+  </div>
+
+  <div class="druginfo_div">
+    <img src="./images/drug_img/mephedrone.gif">
+    <p>Substance: <b>Derivatives of cathinone, e.g Mephedrone</b></p>
+    <p>Street Names: <b>Meow Meow</b></p>
+    <p>Medical Use: <b>None</b></p>
+    <p>Effect and Danger: <b>
+1. Altered level of consciousness
+2. Memory problems and blood circulation problems
+3. Erratic behaviour, hallucinations and delusions</b></p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div data-role="footer" data-position="fixed" data-theme="b">
+    <h1>Copyright &copy; Eddie’s Anti-drug Information and Resources</h1>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Eddie’s Anti-drug Information and Resources</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.js"></script>
+  <script src="./js/jquery.cookie.js"></script>
+  <script src="./js/custom.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+<!-- Home menu -->
+<div data-role="panel" id="sidemenu" data-swipe-close="true" data-theme="b" data-position-fixed="true" data-display="push">
+  <ul data-role="listview" id="slidemenu_list">
+    <li data-icon="home"><a href="index.html" rel="external">Home</a></li>
+    <li><a href="about.html" rel="external">About us</a></li>
+    <li><a href="druginfo.html" rel="external">Drug info</a></li>
+    <li><a href="center.html" rel="external">Center</a></li>
+    <li><a href="contact.html" rel="external">Contact us</a></li>
+    <li><a href="video.html" rel="external">Video</a></li>
+  </ul>
+  <div class="clear"></div>
+  
+  <a href="#" class="ui-btn ui-icon-user ui-btn-icon-left" id="logout">Logout</a>
+
+</div>
+
+<!-- Login -->
+<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="popupLogin">
+  <h2>Login</h2>
+  <form method="post" action="" id="loginForm">
+    <label for="name">Username:</label>
+    <input type="text" name="username" id="username" value="" data-clear-btn="true" data-mini="true" placeholder="Enter Username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" placeholder="Enter Password">
+      <input id="loginbtn" type="submit" value="Login">
+      <p class="register"><a href="register.html" data-theme="b" rel="external">Register</a></p>
+  </form>
+</div>
+
+<!-- Header -->
+<div data-role="header" data-position="fixed" data-theme="b">
+
+  <div style="float:right;">
+    <a href="dashboard.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-b" rel="external" id="dashboardbox"> Dashboard </a>
+    <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-user ui-btn-icon-left ui-btn-b" data-transition="pop" id="loginbox">Login</a>
+  </div>
+  
+  <a href="#sidemenu" class="ui-btn ui-corner-all ui-icon-bars ui-btn-b ui-btn-icon-notext">Bars Icon</a>
+
+  <h1>Center</h1>
+</div>
+
+<!-- CONTENT -->
+<div data-role="main" class="ui-content" id="main-content">
+
+  <div class="center_div">
+      <img src="./images/SARDA_Logo_B.png" class="center_logo">
+      <h3>The Society For the Aid and Rehabiltation of drug abusers</h3>
+      <p>Tel: 2574 3300</p>
+      <p>Email: sarda@sarda.org.hk</p>
+      <p>Address: Shek Kwu Chau Treatment and Rehabilitation Centre</p>
+      <div id="map_canvas1" style="height:280px"></div>
+    </div>
+
+    <div class="center_div">
+      <img src="./images/maing2.gif" class="center_logo">
+      <h3>Hei Ling Chau Addiction Treatment Centre</h3>
+      <p>Tel: 2986 6800 </p>
+      <p>Web: csd.gov.hk</p>
+      <p>Address: Hei Ling Chau Island</p>
+      <div id="map_canvas2" style="height:280px" ></div>
+    </div>
+
+    <div class="center_div">
+      <img src="./images/sracp.jpg" class="center_logo">
+      <h3>The Society of Rehabilitation and Crime Prevention, Hong Kong</h3>
+      <p>Tel: 2527 1322</p>
+      <p>Web: sracp.org.hk</p>
+      <p>Address: Bradbury OASIS Hostel</p>
+      <div id="map_canvas3" style="height:280px"></div>
+    </div>
+
+    <div class="center_div">
+      <img src="./images/wuoi.png" class="center_logo">
+      <h3>Wu Oi Christian Centre</h3>
+      <p>Tel: 2782 2779</p>
+      <p>Web: www.wuoi.org.hk</p>
+      <p>Address: Long Ke Training Centre</p>
+      <div id="map_canvas4" style="height:280px"></div>
+    </div>
+
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="./js/gmap.js"></script>
+
+</div>
+
+<!-- Footer -->
+<div data-role="footer" data-position="fixed" data-theme="b">
+    <h1>Copyright &copy; Eddie’s Anti-drug Information and Resources</h1>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Eddie’s Anti-drug Information and Resources</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+	<script src="./js/jquery.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.js"></script>
+  <script src="./js/jquery.cookie.js"></script>
+  <script src="./js/custom.js"></script>
+  <script type="text/javascript">
+
+$(document).ready(function() {
+
+    $("#submitPost1").on('click', function(){
+
+    var titlef = $("#news-title").val();
+    var contentf = $("#news-content").val();
+
+    var sendData = { title : titlef, content : contentf };
+
+    console.log(sendData);
+
+      $.ajax({
+          url: 'server/api.php/news',
+          type: 'post',
+          dataType: 'json',
+          contentType: 'application/json; charset=utf-8',
+          data : JSON.stringify(sendData),
+          success : function(result) {
+            alert("Post created!");
+              window.location = 'dashboard.html';
+          },
+          error: function(xhr, resp, text) {
+              console.log(xhr, resp, text);
+          }
+      });
+    });
+});
+
+</script>
+</head>
+
+<body>
+
+<div data-role="page" id="home">
+
+<!-- Home menu -->
+<div data-role="panel" id="sidemenu" data-swipe-close="true" data-theme="b" data-position-fixed="true" data-display="push">
+  <ul data-role="listview" id="slidemenu_list">
+    <li data-icon="home"><a href="index.html" rel="external">Home</a></li>
+    <li><a href="about.html" rel="external">About us</a></li>
+    <li><a href="druginfo.html" rel="external">Drug info</a></li>
+    <li><a href="center.html" rel="external">Center</a></li>
+    <li><a href="contact.html" rel="external">Contact us</a></li>
+    <li><a href="video.html" rel="external">Video</a></li>
+  </ul>
+  <div class="clear"></div>
+  
+  <a href="#" class="ui-btn ui-icon-user ui-btn-icon-left" id="logout">Logout</a>
+
+</div>
+
+<!-- Login -->
+<div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="popupLogin">
+  <h2>Login</h2>
+  <form method="post" action="" id="loginForm">
+    <label for="name">Username:</label>
+    <input type="text" name="username" id="username" value="" data-clear-btn="true" data-mini="true" placeholder="Enter Username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true" placeholder="Enter Password">
+      <input id="loginbtn" type="submit" value="Login">
+      <p class="register"><a href="register.html" data-theme="b" rel="external">Register</a></p>
+  </form>
+</div>
+
+<!-- Header -->
+<div data-role="header" data-position="fixed" data-theme="b" id="home-header">
+
+  <div style="float:right;">
+    <a href="dashboard.html" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-b" rel="external" id="dashboardbox"> Dashboard </a>
+    <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-user ui-btn-icon-left ui-btn-b" data-transition="pop" id="loginbox">Login</a>
+  </div>
+
+  <a href="#" class="ui-btn ui-corner-all ui-icon-back ui-btn-b ui-btn-icon-notext" data-rel="back">Back</a>
+
+  <h1></h1>
+</div>
+
+<!-- CONTENT -->
+<div data-role="main" class="ui-content" id="main-content">
+
+<h3>Create blog post:</h3>
+    <form method="post" action="#">
+      <input type="text" id="news-title" name="news-title" class="news-title" placeholder="Title">
+        <textarea id="news-content" name="news-content" class="news-content" rows="10" placeholder="Body"></textarea>
+        <input id="submitPost1" type="submit" data-inline="true" value="Submit" data-theme="b">
+    </form>
+
+</div>
+
+<!-- Footer -->
+<div data-role="footer" data-position="fixed" data-theme="b">
+    <h1>Copyright &copy; Eddie’s Anti-drug Information and Resources</h1>
+  </div>
+</div>
+</body>
+</html>
